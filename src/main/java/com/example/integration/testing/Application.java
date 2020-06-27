@@ -10,12 +10,12 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableJpaRepositories("com.example.integration.testing.repositories") 
 @EntityScan("com.example.integration.testing.entities")
 @SpringBootApplication
-public class IntegrationTestingSampleApiApplication {
+public class Application {
 	
-	final static Logger log = LoggerFactory.getLogger(IntegrationTestingSampleApiApplication.class);
+	final static Logger log = LoggerFactory.getLogger(Application.class);
 
 	public static void main(String[] args) {
-		SpringApplication.run(IntegrationTestingSampleApiApplication.class, args);
+		SpringApplication.run(Application.class, args);
 		log.info("Started Application on port:");
 	}
 
